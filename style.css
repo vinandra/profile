@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "cool";
+  src: url(assets/fonts/ChunkyRosie.5eeffaae.woff);
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "cool";
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #272623;
+  background-image: url(assets/img/bg-text-headline.5a1cd8fe.png);
+}
+
+header {
+  background-color: #222222;
+  color: #eaeaea;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-title {
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+.logo:hover {
+  color: crimson;
+}
+
+.btn-cta {
+  margin-right: 10px;
+  border: none;
+  font-size: 20px;
+  padding: 6px 12px;
+  background: crimson;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  padding: 20px;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+li a {
+  transition: all 0.5s ease 0s;
+}
+
+li a:hover {
+  color: crimson;
+}
+
+a {
+  color: #fefefe;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 20px;
+  color: #fefefe;
+}
+
+.description {
+  font-size: 20px;
+  color: #fefefe;
+}
+
+.img-foto {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  padding: 10px;
+}
+
+.parallax {
+  /* background-image: url("assets/img/Tanpa\ judul\(1\).png"); */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.tentang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-item {
+  width: 25%;
+  padding: 20px;
+  color: #fefefe;
+}
+
+.logo-img {
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+}
+
+.logo {
+  margin-right: auto;
+  display: flex;
+  gap: 5px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #222222;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card-item {
+    width: 100%;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .intro {
+    margin-top: 20px;
+  }
+}
